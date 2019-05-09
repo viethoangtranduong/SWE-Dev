@@ -1,0 +1,232 @@
+/* 
+DayPilot Kanban Theme
+https://themes.daypilot.org/kanban/theme/uy4kf6
+Theme Designer Version: 2018.10.05.33770
+*/
+.kanban_white_main 
+{
+	border: 1px solid #c0c0c0;
+}
+.kanban_white_main, .kanban_white_main td 
+{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.kanban_white_card { 
+}
+.kanban_white_card { 
+	color: #333333;
+}
+.kanban_white_card_inner { 
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: 0px;
+	overflow: hidden;
+	background-color: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#fafafa));  
+	background: -webkit-linear-gradient(top, #ffffff 0%, #fafafa);
+	background: -moz-linear-gradient(top, #ffffff 0%, #fafafa);
+	background: -ms-linear-gradient(top, #ffffff 0%, #fafafa);
+	background: -o-linear-gradient(top, #ffffff 0%, #fafafa);
+	background: linear-gradient(top, #ffffff 0%, #fafafa);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ffffff", endColorStr="#fafafa");
+	padding: 2px;
+	padding-left: 6px;
+	border: 1px solid #cccccc;
+}
+.kanban_white_colheadercell {
+	text-align: center;
+	color: #333333;
+	background: #ffffff;
+}
+.kanban_white_colheadercell_inner
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	border-right: 1px solid #aaa;
+}
+.kanban_white_rowheader,
+.kanban_white_corner
+{
+	color: #333333;
+	background: #ffffff;
+}
+.kanban_white_rowheader_inner {
+	padding: 2px;
+}
+.kanban_white_timeheadergroup,
+.kanban_white_timeheadercol
+{
+	text-align: center;
+}
+.kanban_white_timeheadergroup_inner,
+.kanban_white_timeheadercol_inner
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	border-right: 1px solid #c0c0c0;
+	padding: 2px;
+}
+.kanban_white_timeheadergroup_inner {
+	border-bottom: 1px solid #c0c0c0;
+}
+.kanban_white_divider,
+.kanban_white_splitter,
+.kanban_white_divider_horizontal,
+.kanban_white_resourcedivider 
+{
+	background-color: #c0c0c0;
+}
+.kanban_white_matrix_vertical_line,
+.kanban_white_matrix_horizontal_line 
+{
+	background-color: #eeeeee;
+}
+.kanban_white_cell 
+{
+	background: #ffffff;
+}
+.kanban_white_cell.kanban_white_cell_business 
+{
+	background: #ffff;
+}
+.kanban_white_message 
+{
+	padding: 10px;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	color: #ffffff;
+	background: #ffa216;
+}
+.kanban_white_shadow_inner 
+{
+	background-color: #666666;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	height: 100%;
+}
+.kanban_white_card_bar
+{
+	background-color: #a8119e;
+	cursor:move;
+}
+.kanban_white_rowheaderdivider 
+{
+	background-color: #c0c0c0;
+}
+.kanban_white_matrix_vertical_break 
+{
+	background-color: #000;
+}
+.kanban_white_cellparent {
+}
+.kanban_white_tree_image_no_children {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAKXRFWHRDcmVhdGlvbiBUaW1lAHDhIDMwIEkgMjAwOSAwODo0NjozMSArMDEwMClDkt4AAAAHdElNRQfZAR4HLzEyzsCJAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAABGdBTUEAALGPC/xhBQAAADBJREFUeNpjrK6s5uTl/P75OybJ0NLW8h8bAIozgeSxAaA4E1A7VjmgOL31MeLxHwCeXUT0WkFMKAAAAABJRU5ErkJggg==);
+}
+.kanban_white_tree_image_expand {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAKXRFWHRDcmVhdGlvbiBUaW1lAHDhIDMwIEkgMjAwOSAwODo0NjozMSArMDEwMClDkt4AAAAHdElNRQfZAR4HLyUoFBT0AAAACXBIWXMAAA7CAAAOwgEVKEqAAAAABGdBTUEAALGPC/xhBQAAAFJJREFUeNpjrK6s5uTl/P75OybJ0NLW8h8bAIozgeRhgJGREc4GijMBtTNgA0BxFog+uA4IA2gmUJwFog/IgUhAGBB9KPYhA3T74Jog+hjx+A8A1KRQ+AN5vcwAAAAASUVORK5CYII=);
+}
+.kanban_white_tree_image_collapse {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAAKXRFWHRDcmVhdGlvbiBUaW1lAHDhIDMwIEkgMjAwOSAwODo0NjozMSArMDEwMClDkt4AAAAHdElNRQfZAR4HLxB+p9DXAAAACXBIWXMAAA7CAAAOwgEVKEqAAAAABGdBTUEAALGPC/xhBQAAAENJREFUeNpjrK6s5uTl/P75OybJ0NLW8h8bAIozgeSxAaA4E1A7VjmgOAtEHyMjI7IE0EygOAtEH5CDqY9c+xjx+A8ANndK9WaZlP4AAAAASUVORK5CYII=);
+}
+.kanban_white_columnheader 
+{
+}
+.kanban_white_columnheader_inner {
+    font-weight: bold;
+}
+.kanban_white_columnheader_cell {
+    background: -webkit-gradient(linear, left top, right top, from(#eeeeee), to(#dddddd));
+    background: -moz-linear-gradient(left, #eeeeee 0%, #dddddd);
+    background: -ms-linear-gradient(left, #eeeeee 0%, #dddddd);
+    background: -webkit-linear-gradient(left, #eeeeee 0%, #dddddd);
+    background: linear-gradient(left, #eeeeee 0%, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr="#eeeeee", endColorStr="#dddddd", GradientType=1);
+}
+.kanban_white_columnheader_splitter {
+    background-color: #666;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.kanban_white_columnheader_cell_inner {
+    padding: 2px;   
+}
+.kanban_white_card_move_left {
+	box-sizing: border-box; 
+	padding:2px;
+	border:1px solid #ccc;
+	background:#fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee);
+	background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee);
+	background: -ms-linear-gradient(top, #ffffff 0%, #eeeeee);
+	background: -o-linear-gradient(top, #ffffff 0%, #eeeeee);
+	background: linear-gradient(top, #ffffff 0%, #eeeeee);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ffffff", endColorStr="#eeeeee");
+}
+.kanban_white_card_move_right {
+	box-sizing: border-box; 
+	padding:2px;
+	border:1px solid #ccc;
+	background:#fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee);
+	background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee);
+	background: -ms-linear-gradient(top, #ffffff 0%, #eeeeee);
+	background: -o-linear-gradient(top, #ffffff 0%, #eeeeee);
+	background: linear-gradient(top, #ffffff 0%, #eeeeee);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ffffff", endColorStr="#eeeeee");
+}
+.kanban_white_card_delete {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAI5JREFUKFNtkLERgCAMRbmzdK8s4gAUlhYOYEHJEJYOYOEwDmGBPxC4kOPfvePy84MGR0RJ2N1A8H3N6DATwSQ57m2ql8NBG+AEM7D+UW+wjdfUPgerYNgB5gOLRHqhcasg84C2QxPMtrUhSqQIhg7ypy9VM2EUZPI/4rQ7rGxqo9sadTegw+UdjeDLAKUfhbaQUVPIfJYAAAAASUVORK5CYII=) center center no-repeat; opacity: 0.6; -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=60)';
+	cursor: pointer;
+}
+.kanban_white_card_delete:hover {
+	opacity: 1;
+	-ms-filter: none;
+}
+.kanban_white_rowmove_handle { background-repeat: no-repeat; background-position: center center; background-color: #ccc; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAYAAACT+/8OAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAClJREFUGFdj+P//P4O9vX2Bg4NDP4gNFgBytgPxebgAMsYuQGMz/jMAAFsTZDPYJlDHAAAAAElFTkSuQmCC); cursor: move; }
+.kanban_white_rowmove_source { background-color: black; opacity: 0.2; }
+.kanban_white_rowmove_position_before, .kanban_white_rowmove_position_after { background-color: #999; height: 2px; }
+.kanban_white_rowmove_position_child { margin-left: 10px; background-color: #999; height: 2px; }
+.kanban_white_rowmove_position_child:before { content: '+'; color: #999; position: absolute; top: -8px; left: -10px; }
+.kanban_white_rowmove_position_forbidden { background-color: red; height: 2px; margin-left: 10px; }
+.kanban_white_rowmove_position_forbidden:before { content: 'x'; color: red; position: absolute; top: -8px; left: -10px; }
+.kanban_white_link_horizontal { border-bottom-style: solid; border-bottom-color: red }
+.kanban_white_link_vertical { border-right-style: solid; border-right-color: red }
+.kanban_white_link_arrow_right:before { content: ''; border-width: 6px; border-color: transparent transparent transparent red; border-style: solid; width: 0px; height:0px; position: absolute; }
+.kanban_white_link_arrow_left:before { content: ''; border-width: 6px; border-color: transparent red transparent transparent; border-style: solid; width: 0px; height:0px; position: absolute; }
+.kanban_white_link_arrow_down:before { content: ''; border-width: 6px; border-color: red transparent transparent transparent; border-style: solid; width: 0px; height:0px; position: absolute; }
+.kanban_white_link_arrow_up:before { content: ''; border-width: 6px; border-color: transparent transparent red transparent; border-style: solid; width: 0px; height:0px; position: absolute; }
+.kanban_white_shadow_overlap .kanban_white_shadow_inner { background-color: red; }
+.kanban_white_overlay { background-color: gray; opacity: 0.5; filter: alpha(opacity=50); }
+.kanban_white_header_icon { box-sizing: border-box; border: 1px solid #c0c0c0; background-color: #ffffff; color: #333333; }
+.kanban_white_header_icon:hover { background-color: #fafafa; }
+.kanban_white_header_icon_hide:before { content: '\00AB'; }
+.kanban_white_header_icon_show:before { content: '\00BB'; }
+.kanban_white_row_new .kanban_white_rowheader_inner { cursor: text; background-position: 0px 5px; background-repeat: no-repeat; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABUSURBVChTY0ACslAaK2CC0iCQDMSlECYmQFYIAl1AjFUxukIQwKoYm0IQwFCMSyEIaEJpMMClcD4Qp0CYEIBNIUzRPzAPCtAVYlWEDgyAGIdTGBgAbqEJYyjqa3oAAAAASUVORK5CYII=); }
+.kanban_white_row_new .kanban_white_rowheader_inner:hover { background: white; }
+.kanban_white_rowheader textarea { padding: 3px; }
+.kanban_white_rowheader_scroll { cursor: default; }
+.kanban_white_shadow_forbidden .kanban_white_shadow_inner { background-color: red; }
+.kanban_white_card_moving_source { opacity: 0.5; filter: alpha(opacity=50); }
+.kanban_white_linkpoint { background-color: white; border: 1px solid gray; border-radius: 5px; }
+.kanban_white_linkpoint.kanban_white_linkpoint_hover { background-color: black; }
+.kanban_white_card_header { font-size: 120%; font-weight: bold; }
+.kanban_white_cell.kanban_default_collapsed { background-color: #eee; }
+.kanban_white_swimlane_collapse { cursor:pointer; border: 1px solid #ccc; text-align:center; }
+.kanban_white_swimlane_collapse:before { content: '^'; }
+.kanban_white_swimlane_expand { cursor:pointer; border: 1px solid #ccc; text-align:center; }
+.kanban_white_swimlane_expand:before { content: '>'; }
+.kanban_white_columnmove_handle { opacity: 0.5; background-repeat: no-repeat; background-position: center center; background-color: #ccc; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAYAAACT+/8OAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAClJREFUGFdj+P//P4O9vX2Bg4NDP4gNFgBytgPxebgAMsYuQGMz/jMAAFsTZDPYJlDHAAAAAElFTkSuQmCC); cursor: move; }
+.kanban_white_columnmove_position { background-color: #333; }
+.kanban_white_crosshair_vertical, .kanban_white_crosshair_horizontal, .kanban_white_crosshair_left, .kanban_white_crosshair_top { background-color: gray; opacity: 0.2; filter: alpha(opacity=20); }

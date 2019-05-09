@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> </style>
+<title> Sign In</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/374C36C6-47E0-4C49-B9CB-7CF2AFF01E5B/main.js" charset="UTF-8"></script>
+</head>
+<body>
+	<div class="page">
+        <h1> Kanban Board!</h1>
+        <div class="form">         
+        <form action='/login' method="POST" class="login-form">
+          	<input type="text" name="Username"required placeholder="Username"/>
+      		  <input type="Password" name="Password"required placeholder="Password"/>
+            <button>Log In</button>
+            <p class="message"><a href="{{ url_for('sign_up')}}">Create an account</a></p>
+          
+        </form>  
+		{% for message in get_flashed_messages() %}
+            <div class=flash>{{ message }}</div>
+        {% endfor %} 
+       </div> 
+       </div>  
+</body>
+</html>

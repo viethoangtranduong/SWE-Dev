@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<title> Kanban Board </title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/374C36C6-47E0-4C49-B9CB-7CF2AFF01E5B/main.js" charset="UTF-8"></script></head>
+
+<body>
+    <p> Logged in as {{user}} </p>
+    <p> <a href="{{ url_for('log_out')}}">Log out</a> </p>
+    <h1> {{user}}'s kanban board</h1>
+<!DOCTYPE html>
+<html>
+<head>
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa;" >
+            <h2> DO table</h2>
+            <ul>
+            {% for action in do %}
+                <li>{{ action.Activity }}</li>
+                <li>
+                    <button><a href="{{ url_for('move_task', row_id = action.row_id, new_Status = "2") }}">Mark as doing</a></button>
+                    <button><a href="{{ url_for('move_task', row_id = action.row_id, new_Status = "3") }}">Mark as done</a></button>
+                    <button><a href="{{ url_for('delete_task', row_id = action.row_id) }}">Delete task</a></button></li>
+            {% endfor %}  
+            <div class="form">
+                <form action="/add" method="post">
+                <input type="text" name="do"required placeholder="Add new to do task">
+                <p> <button> Add </button></p>
+                    </form>
+                </div>
+            </ul>
+            
+        </div>
+        <div class="column" style="background-color:#bbb;" >
+           <h2>DOING table</h2>
+           <ul>
+          {% for action in doing %}
+                <li>{{ action.Activity }}</li>
+               <li>
+                    <button><a href="{{ url_for('move_task', row_id = action.row_id, new_Status = "1") }}">Mark as do</a></button>
+                    <button><a href="{{ url_for('move_task', row_id = action.row_id, new_Status = "3") }}">Mark as done</a></button>
+                    <button><a href="{{ url_for('delete_task', row_id = action.row_id) }}">Delete task</a></button></li>
+            {% endfor %}   
+            <div class="form">
+                <form action="/add" method="post">
+                <input type="text" name="doing"required placeholder="Add new Doing task">
+                <p>
+                    <button> Add </button></p>
+                    </form>
+                </div>
+            </ul>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+        <h2> DONE table</h2>
+            <ul>
+            {% for action in done %}
+                <li>{{ action.Activity }}</li>
+               <li>
+                    <button><a href="{{ url_for('move_task', row_id = action.row_id, new_Status = "1") }}"> Mark as do</a></button>
+                    <button><a href="{{ url_for('move_task', row_id = action.row_id, new_Status = "2") }}"> Mark as doing</a></button>
+                    <button><a href="{{ url_for('delete_task', row_id = action.row_id) }}">Delete task</a></button></li>
+            {% endfor %}
+            <div class="form">
+                <form action="/add" method="post">
+                <input type="text" name="done" required placeholder="Add new Done task">
+                <p>
+                    <button> Add </button></p>
+                    </form>
+                </div>
+            </ul>
+        </div>
+    </div>
+        {% for message in get_flashed_messages() %}
+            <div class=flash>{{ message }}</div>
+        {% endfor %}    
+</body>
+</html>

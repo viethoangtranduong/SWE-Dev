@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<title> Demo Version </title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/374C36C6-47E0-4C49-B9CB-7CF2AFF01E5B/main.js" charset="UTF-8"></script></head>
+
+<body>
+    <p> <a href="{{ url_for('log_in')}}">Log in</a> </p>
+    <p> <a href="{{ url_for('log_out')}}">Log out</a> </p>
+    <h1>  Kanban board</h1>
+    <p> This is the standard view of the Kanban Board. <BR>
+    Please <a href="{{ url_for('log_in')}}">Log in</a> or <a href="{{ url_for('sign_up')}}"> Create an account</a> to Get started and access Premium features </p>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2> DO table</h2>
+            <ul>
+            <div class="form">
+                <form action="/add" method="post">
+                <input type="text" name="task"required placeholder="Add new to do task">
+                <p>
+                    <button><a href="{{ url_for('log_in') }}"> Must Sign Up or Log In to perform task </a>
+                        </button></p>
+                    </form>
+                </div>
+            </ul>
+            
+        </div>
+        <div class="column" style="background-color:#bbb;">
+           <h2>DOING table</h2>
+           <ul>
+            <div class="form">
+                <form action="/add" method="post">
+                <input type="text" name="task"required placeholder="Add new Doing task">
+                <p>
+                    <button><a href="{{ url_for('log_in') }}"> Must Sign Up or Log In to perform task </a>
+                        </button></p>
+                    </form>
+                </div>
+            </ul>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+        <h2> DONE table</h2>
+            <ul>
+            <div class="form">
+                <form action="/add" method="post">
+                <input type="text" name="task"required placeholder="Add new Done task">
+                <p>
+                    <button><a href="{{ url_for('log_in') }}"> Must Sign Up or Log In to perform task </a>
+                        </button></p>
+                    </form>
+                </div>
+            </ul>
+        </div>
+    </div>
+        {% for message in get_flashed_messages() %}
+            <div class=flash>{{ message }}</div>
+        {% endfor %}    
+</body>
+</html>

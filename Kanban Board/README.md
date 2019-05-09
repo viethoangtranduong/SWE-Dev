@@ -33,3 +33,9 @@ The `app` folder contains the application files:
 - `Database.py`: The Database
 - `static/` : static assets for the front end
 - `templates/`: html assets for the front end
+
+## How to run the code: 
+- Create Virtual Environment: `$ virtualenv venv `
+- Activate the enviroment `$ venv/Scripts/activate `
+- Install required packages `pip install -r requirements.txt`
+- Run the `app.py` file to create Database: `python app.py`

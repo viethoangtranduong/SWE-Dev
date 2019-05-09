@@ -38,4 +38,4 @@ The `app` folder contains the application files:
 - Create Virtual Environment: `$ virtualenv venv `
 - Activate the enviroment `$ venv/Scripts/activate `
 - Install required packages `pip install -r requirements.txt`
-- Run the `app.py` file to create Database: `python app.py`
+- Run the `app.py` file to create Web Application on the local host: `python app.py`
